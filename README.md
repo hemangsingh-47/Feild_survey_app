@@ -4,27 +4,13 @@ A modern React Native application built using **Expo SDK 54** that demonstrates 
 
 This project was developed as a React Native mini project to learn real-world mobile application development.
 
----
-
-## 📸 Preview
-
-> Add screenshots of your app here.
-
-| Dashboard | Survey Form | Camera |
-|-----------|-------------|--------|
-| ![Dashboard](./assets/screenshots/dashboard.png) | ![Survey](./assets/screenshots/survey.png) | ![Camera](./assets/screenshots/camera.png) |
-
-| Location | Contacts | History |
-|-----------|-----------|----------|
-| ![Location](./assets/screenshots/location.png) | ![Contacts](./assets/screenshots/contacts.png) | ![History](./assets/screenshots/history.png) |
-
----
+--
 
 ## 🎥 Project Demo
 
 Watch the complete demo on YouTube:
 
-📺 **YouTube:** *(Add your video link here)*
+📺 **YouTube:** *https://www.youtube.com/watch?v=oNMiUmaLrm0*
 
 ---
 
@@ -243,13 +229,13 @@ After completing this project, I learned:
 
 **Hemang Singh**
 
-📧 Email: *Add your email here*
+📧 Email: hemangsingh47@gmail.com
 
 🔗 GitHub:
 https://github.com/hemangsingh-47
 
 💼 LinkedIn:
-*Add your LinkedIn profile here*
+https://www.linkedin.com/in/hemang-singh-solanki-b866b23ab/
 
 ---
 
