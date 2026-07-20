@@ -1,50 +1,70 @@
-# Welcome to your Expo app 👋
+# Smart Field Survey App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native application built with Expo designed to streamline field survey operations. The app provides a comprehensive dashboard and integrates various device native features to assist surveyors in data collection, site management, and tracking.
 
-## Get started
+## 🚀 Features
 
-1. Install dependencies
+- **Dashboard:** An intuitive home screen displaying surveyor details, daily survey counts, quick action shortcuts, and a list of recent surveys.
+- **Survey Management:** Create new surveys by capturing essential details like Site Name, Client Name, Description, Priority, and Date.
+- **Native Device Integrations:**
+  - 📷 **Camera:** Integrated with `expo-camera` to capture on-site images.
+  - 📍 **Location:** Uses `expo-location` to fetch real-time geographic coordinates.
+  - 👥 **Contacts:** Access device contacts via `expo-contacts` for client or personnel management.
+  - 📋 **Clipboard:** Interact with the device clipboard using `expo-clipboard`.
+- **Navigation:** Seamless navigation using Expo Router with a Drawer and Bottom Tabs layout.
 
-   ```bash
-   npm install
-   ```
+## 🛠️ Technology Stack
 
-2. Start the app
+- **Framework:** [React Native](https://reactnative.dev/)
+- **Platform:** [Expo](https://expo.dev/) (SDK ~54.0)
+- **Routing:** [Expo Router](https://docs.expo.dev/router/introduction/) for file-based routing
+- **Navigation:** `@react-navigation/drawer`, `@react-navigation/bottom-tabs`
+- **Icons:** `@expo/vector-icons` (Ionicons)
+- **Native Modules:**
+  - `expo-camera`
+  - `expo-location`
+  - `expo-contacts`
+  - `expo-clipboard`
+  - `expo-media-library`
 
-   ```bash
-   npx expo start
-   ```
+## 📁 Project Structure
 
-In the output, you'll find options to open the app in a
+This project uses file-based routing with Expo Router. The main screens are located in the `app` directory:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- `app/(drawer)` - Contains the Drawer navigator layout.
+  - `camera.jsx` - Camera screen
+  - `location.jsx` - Location tracking screen
+  - `contacts.jsx` - Contacts list screen
+  - `clipboard.jsx` - Clipboard management screen
+  - `settings.jsx` - Settings screen
+  - `(tabs)` - Contains the Bottom Tabs navigator layout.
+    - `index.jsx` - Main Dashboard screen
+    - `survey.jsx` - Create Survey form
+    - `history.jsx` - Survey history list
+    - `profile.jsx` - User profile screen
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🏃‍♂️ Getting Started
 
-## Get a fresh project
-
-When you're ready, run:
+### 1. Install dependencies
 
 ```bash
-npm run reset-project
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. Start the development server
 
-## Learn more
+```bash
+npx expo start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+In the output, you'll find options to open the app in a:
+- Development build
+- Android emulator
+- iOS simulator
+- Expo Go app on your physical device
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 📱 Development
 
-## Join the community
+You can start developing by editing the files inside the `app` directory. The UI is built using React Native core components (`View`, `Text`, `ScrollView`, etc.) and styled using `StyleSheet`.
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+To create a new screen, simply add a new `.jsx` or `.tsx` file in the `app` directory according to the file-based routing conventions.
