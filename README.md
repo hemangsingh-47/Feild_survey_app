@@ -1,53 +1,278 @@
-Smart Field Survey App
-A React Native application built with Expo designed to streamline field survey operations. The app provides a comprehensive dashboard and integrates various device native features to assist surveyors in data collection, site management, and tracking.
+# 📱 Smart Field Survey & Inspection App
 
-🚀 Features
-Dashboard: An intuitive home screen displaying surveyor details, daily survey counts, quick action shortcuts, and a list of recent surveys.
-Survey Management: Create new surveys by capturing essential details like Site Name, Client Name, Description, Priority, and Date.
-Native Device Integrations:
-📷 Camera: Integrated with expo-camera to capture on-site images.
-📍 Location: Uses expo-location to fetch real-time geographic coordinates.
-👥 Contacts: Access device contacts via expo-contacts for client or personnel management.
-📋 Clipboard: Interact with the device clipboard using expo-clipboard.
-Navigation: Seamless navigation using Expo Router with a Drawer and Bottom Tabs layout.
-🛠️ Technology Stack
-Framework: React Native
-Platform: Expo (SDK ~54.0)
-Routing: Expo Router for file-based routing
-Navigation: @react-navigation/drawer, @react-navigation/bottom-tabs
-Icons: @expo/vector-icons (Ionicons)
-Native Modules:
-expo-camera
-expo-location
-expo-contacts
-expo-clipboard
-expo-media-library
-📁 Project Structure
-This project uses file-based routing with Expo Router. The main screens are located in the app directory:
+A modern React Native application built using **Expo SDK 54** that demonstrates the integration of multiple Expo APIs such as Camera, Location, Contacts, and Clipboard with **Expo Router**, **Drawer Navigation**, and **Bottom Tab Navigation**.
 
-app/(drawer) - Contains the Drawer navigator layout.
-camera.jsx - Camera screen
-location.jsx - Location tracking screen
-contacts.jsx - Contacts list screen
-clipboard.jsx - Clipboard management screen
-settings.jsx - Settings screen
-(tabs) - Contains the Bottom Tabs navigator layout.
-index.jsx - Main Dashboard screen
-survey.jsx - Create Survey form
-history.jsx - Survey history list
-profile.jsx - User profile screen
-🏃‍♂️ Getting Started
-1. Install dependencies
+This project was developed as a React Native mini project to learn real-world mobile application development.
+
+---
+
+## 📸 Preview
+
+> Add screenshots of your app here.
+
+| Dashboard | Survey Form | Camera |
+|-----------|-------------|--------|
+| ![Dashboard](./assets/screenshots/dashboard.png) | ![Survey](./assets/screenshots/survey.png) | ![Camera](./assets/screenshots/camera.png) |
+
+| Location | Contacts | History |
+|-----------|-----------|----------|
+| ![Location](./assets/screenshots/location.png) | ![Contacts](./assets/screenshots/contacts.png) | ![History](./assets/screenshots/history.png) |
+
+---
+
+## 🎥 Project Demo
+
+Watch the complete demo on YouTube:
+
+📺 **YouTube:** *(Add your video link here)*
+
+---
+
+## ✨ Features
+
+### 📊 Dashboard
+- Student Information
+- Today's Survey Count
+- Quick Action Cards
+- Recent Survey Summary
+
+### 📝 Create Survey
+- Site Name
+- Client Name
+- Description
+- Priority Selection
+- Date Selection
+- Form Validation
+
+### 📷 Camera Module
+- Camera Permission
+- Capture Photo
+- Preview Image
+- Display Capture Time
+- Retake Photo
+- Delete Photo
+- Confirmation Alert
+
+### 📍 Location Module
+- Request Location Permission
+- Fetch Current GPS Location
+- Latitude & Longitude
+- Accuracy Display
+- Refresh Location
+- Copy Location to Clipboard
+
+### 👥 Contacts Module
+- Fetch Device Contacts
+- Contact Search
+- Contact Counter
+- Contact Avatar
+- Copy Contact Number
+- Pull To Refresh
+- Empty State Screen
+
+### 📋 Clipboard Module
+- Copy Survey ID
+- Copy Contact Number
+- Copy Current Location
+- Paste Clipboard Data
+- Clear Clipboard Data
+
+### 👀 Survey Preview
+- Display Survey Details
+- Display Captured Photo
+- Display Location
+- Edit Survey
+- Submit Survey
+
+### 📚 Survey History
+- Display Surveys
+- Search Survey
+- Filter by Priority
+- View Details
+- Delete Survey
+- Confirmation Dialog
+
+---
+
+# 📱 Screens
+
+- Dashboard
+- Survey Form
+- Camera
+- Location
+- Contacts
+- Clipboard
+- Survey Preview
+- Survey History
+
+---
+
+# 🛠 Tech Stack
+
+| Technology | Usage |
+|------------|-------|
+| React Native | Mobile Development |
+| Expo SDK 54 | Development Framework |
+| Expo Router | Routing |
+| React Navigation | Navigation |
+| JavaScript (ES6) | Programming Language |
+| Expo Camera | Camera API |
+| Expo Location | GPS Location |
+| Expo Contacts | Device Contacts |
+| Expo Clipboard | Clipboard API |
+
+---
+
+# 📦 Dependencies
+
+```json
+{
+  "expo": "~54.0.0",
+  "expo-camera": "*",
+  "expo-location": "*",
+  "expo-contacts": "*",
+  "expo-clipboard": "*",
+  "expo-router": "*",
+  "@react-navigation/native": "*",
+  "@react-navigation/drawer": "*",
+  "@react-navigation/bottom-tabs": "*"
+}
+```
+
+---
+
+# 📂 Project Structure
+
+```
+Smart_Field_Survey_App
+│
+├── app
+│   ├── _layout.jsx
+│   ├── (drawer)
+│   │     ├── _layout.jsx
+│   │     ├── camera.jsx
+│   │     ├── contacts.jsx
+│   │     ├── location.jsx
+│   │     ├── clipboard.jsx
+│   │     ├── preview.jsx
+│   │     └── (tabs)
+│   │            ├── _layout.jsx
+│   │            ├── index.jsx
+│   │            ├── survey.jsx
+│   │            ├── history.jsx
+│   │            └── profile.jsx
+│
+├── assets
+├── package.json
+└── README.md
+```
+
+---
+
+# 🚀 Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/hemangsingh-47/Feild_survey_app.git
+```
+
+### Move into Project
+
+```bash
+cd Feild_survey_app
+```
+
+### Install Dependencies
+
+```bash
 npm install
-2. Start the development server
+```
+
+### Start Project
+
+```bash
 npx expo start
-In the output, you'll find options to open the app in a:
+```
 
-Development build
-Android emulator
-iOS simulator
-Expo Go app on your physical device
-📱 Development
-You can start developing by editing the files inside the app directory. The UI is built using React Native core components (View, Text, ScrollView, etc.) and styled using StyleSheet.
+Run on:
 
-To create a new screen, simply add a new .jsx or .tsx file in the app directory according to the file-based routing conventions.
+- Android Emulator
+- Physical Android Device
+- Expo Go
+
+---
+
+# 📚 Concepts Covered
+
+- React Native Components
+- React Hooks
+- Expo APIs
+- Drawer Navigation
+- Bottom Tabs
+- Expo Router
+- Form Validation
+- Device Permissions
+- FlatList
+- ScrollView
+- Alerts
+- Clipboard API
+- Camera API
+- GPS Location
+- Contacts API
+
+---
+
+# 🎯 Learning Outcomes
+
+After completing this project, I learned:
+
+- Building production-style React Native applications
+- Working with native device features
+- Navigation using Expo Router
+- React Hooks (useState & useEffect)
+- Form validation
+- Reusable Components
+- Mobile UI Design
+- Permission Handling
+- API Integration
+
+---
+
+# 👨‍💻 Developer
+
+**Hemang Singh**
+
+📧 Email: *Add your email here*
+
+🔗 GitHub:
+https://github.com/hemangsingh-47
+
+💼 LinkedIn:
+*Add your LinkedIn profile here*
+
+---
+
+# ⭐ Support
+
+If you found this project helpful,
+
+⭐ Star this repository
+
+🍴 Fork this project
+
+🐛 Open an issue for suggestions or bugs
+
+---
+
+# 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## ❤️ Thank You
+
+Thank you for visiting this repository.
+
+If you like this project, don't forget to ⭐ the repository.
